@@ -1,0 +1,79 @@
+/* Noto serif Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif {
+    font-family: "Noto Serif", serif;
+
+}
+
+/* Inter Font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter {
+    font-family: "Inter", sans-serif;
+
+}
+
+
+/* css code start here */
+
+body {
+    background-color: #F5F8FF;
+}
+
+.navbar {
+    /* border: 2px solid tomato; */
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+#Home {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#Cart {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navname {
+    color: #8987A1;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* For mobile device */
+@media screen and (max-width:576px) {
+    .navbar {
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-item:not(:last-child) {
+        display: none;
+    }
+    .logo{
+        height: 40px;
+    }
+
+}
