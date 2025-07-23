@@ -62,6 +62,31 @@ body {
     font-weight: 400;
 }
 
+.hero {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 100px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.hero-title span {
+    color: #E95A08;
+}
+
+.hero-description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 /* For mobile device */
 @media screen and (max-width:576px) {
     .navbar {
@@ -72,8 +97,20 @@ body {
     .nav-item:not(:last-child) {
         display: none;
     }
-    .logo{
-        height: 40px;
+
+    .logo {
+        height: 30px;
     }
+
+    /* hero section */
+    .hero {
+        width: 100%;
+        margin: 0px auto;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+
+
 
 }
