@@ -17,6 +17,11 @@
 
 
 /* css code start here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #F5F8FF;
@@ -26,7 +31,7 @@ body {
     /* border: 2px solid tomato; */
     display: flex;
     width: 80%;
-    margin: 0px auto;
+    margin: 10px auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -86,9 +91,61 @@ body {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
 }
+/* plant section */
+.plant{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+.plant-title{
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.plant-title span{
+    color: #E95A08;
+}
+.plant-describtion{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.plant-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 30px;
+    column-gap: 10px;
+
+}
+.card-heading{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.product-price{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 100%;
+    height: auto;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 10px;
+    
+
+}
 
 /* For mobile device */
 @media screen and (max-width:576px) {
+
     .navbar {
         width: 100%;
         align-items: center;
@@ -109,6 +166,23 @@ body {
         flex-direction: column-reverse;
         margin-top: 50px;
     }
+
+    /* plant section */
+    .plant{
+      width: 100%;
+   
+}
+
+
+.plant-card{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px;
+    column-gap: 5px;
+
+}
+
+
+
 
 
 
