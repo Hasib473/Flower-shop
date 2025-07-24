@@ -288,13 +288,13 @@ body {
 }
 
 #img1{
-  background-image: url("/assets/deal-bloom.png");
+  background-image: url("../assets/deal-bloom.png");
 }
 #img2{
-  background-image: url("/assets/deal-ana.png");
+  background-image: url("../assets/deal-ana.png");
 }
 #img3{
-  background-image: url("/assets/deal-zabo.png");
+  background-image: url("../assets/deal-zabo.png");
 }
 
 /* Responsive for Mobile Devices */
