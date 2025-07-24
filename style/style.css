@@ -160,47 +160,64 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
- /* flower love desing */
- .flower-lover{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0px auto;
-    gap:50px;
-    /* border: 2px solid tomato; */
+ .flower-lover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  gap: 40px;
+}
 
+/* Left Image Section */
+.left-image {
+  flex: 1;
+  margin-top: 100px;
+}
 
- }
- .left-image{
-    height: auto;
-    margin-top: 100px;
- }
- .trusted-badge{
-    width: 50%;
-    margin-left: -250px;
-    margin-top: -200px;
- }
- .right-content h2{
-    font-size: 3rem;
-    font-weight: 700;
-    margin-top: -100px;
-    margin-bottom: 50px;
- }
+.left-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
- .right-content ul li{
-    font-size: 1.2rem;
-    font-weight: 400;
-    color:rgba(0, 0, 0, 0.5);
-    margin-top: -10px;
-    line-height: 1.5;
- }
+/* Right Content Section */
+.right-content {
+  flex: 1;
+  position: relative;
+}
+
+.trusted-badge {
+  width: 50%;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+
+.right-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+.right-content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.right-content ul li {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
 /* Responsive for Mobile Devices */
 @media screen and (max-width: 576px) {
-    .nav-list {
-  }
-
+  
   .nav-item:not(:last-child) {
     display: none;
   }
@@ -222,28 +239,61 @@ body {
 
   /* plant section */
 .plant-card {
+    border: 2px solid tomato;
   grid-template-columns: repeat(2,1fr);
   width: 100%;
 }
-/* badge */
+/* flower loved */
 .flower-lover {
+    border:2px solid tomato;
     flex-direction: column;
-    gap:100px;
+    align-items: center;
     width: 100%;
-    
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 20px;
   }
 
-  .right-content img.trusted-badge {
+  .left-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .left-image img {
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+
+  .trusted-badge {
     display: none;
   }
 
   .right-content {
-    margin: 0 auto;
-    max-width: 100%;
-  }
-  .left-image{
-    margin: 0 auto;
+    text-align: start;
     width: 100%;
   }
 
+  .right-content h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .right-content ul {
+    padding-left: 20px;
+  }
+
+  .right-content ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
 }
+
