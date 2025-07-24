@@ -191,14 +191,14 @@ body {
 .trusted-badge {
   width: 50%;
   position: absolute;
-  top: -100px;
-  left: -100px;
+  top: -50px;
+  left: -250px;
 }
 
 .right-content h2 {
   font-size: 3rem;
   font-weight: 700;
-  margin-top: -100px;
+  margin-top: 200px;
   margin-bottom: 50px;
 }
 
