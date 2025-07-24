@@ -105,6 +105,7 @@ body {
     max-width: 1200px;
     margin: 100px auto;
     text-align: center;
+
 }
 .plant-title {
     font-size: 3.2rem;
@@ -159,7 +160,42 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
+ /* flower love desing */
+ .flower-lover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+    gap:50px;
+    /* border: 2px solid tomato; */
 
+
+ }
+ .left-image{
+    height: auto;
+    margin-top: 100px;
+ }
+ .trusted-badge{
+    width: 50%;
+    margin-left: -250px;
+    margin-top: -200px;
+ }
+ .right-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -100px;
+    margin-bottom: 50px;
+ }
+
+ .right-content ul li{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.5);
+    margin-top: -10px;
+    line-height: 1.5;
+ }
 /* Responsive for Mobile Devices */
 @media screen and (max-width: 576px) {
     .nav-list {
@@ -189,4 +225,25 @@ body {
   grid-template-columns: repeat(2,1fr);
   width: 100%;
 }
+/* badge */
+.flower-lover {
+    flex-direction: column;
+    gap:100px;
+    width: 100%;
+    
+  }
+
+  .right-content img.trusted-badge {
+    display: none;
+  }
+
+  .right-content {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .left-image{
+    margin: 0 auto;
+    width: 100%;
+  }
+
 }
