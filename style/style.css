@@ -1,22 +1,18 @@
-/* Noto serif Font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+/* Google Fonts */
 
-.noto-serif {
-    font-family: "Noto Serif", serif;
-
-}
-
-/* Inter Font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Font classes */
+.noto-serif {
+    font-family: "Noto Serif", serif;
+}
 .inter {
     font-family: "Inter", sans-serif;
-
 }
 
-
-/* css code start here */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -25,166 +21,172 @@
 
 body {
     background-color: #F5F8FF;
+    font-family: "Inter", sans-serif;
 }
 
+/* Navbar */
 .navbar {
-    /* border: 2px solid tomato; */
     display: flex;
-    width: 80%;
-    margin: 10px auto;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 50px;
 }
 
 .nav-list {
     display: flex;
     gap: 40px;
-}
-
-.nav-item {
     list-style: none;
 }
 
-.nav-list a {
+.nav-item a {
     text-decoration: none;
+    font-size: 1rem;
 }
 
 #Home {
     color: black;
-    font-size: 1rem;
     font-weight: 700;
 }
-
 #Cart {
     color: black;
-    font-size: 1rem;
     font-weight: 400;
 }
-
 .navname {
     color: #8987A1;
-    font-size: 1rem;
     font-weight: 400;
 }
 
+/* Hero section */
 .hero {
-    width: 80%;
-    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin-top: 100px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 0;
+}
+
+.hero-information {
+    flex: 1 1 400px;
 }
 
 .hero-title {
     font-size: 4rem;
     font-weight: 700;
-
 }
-
 .hero-title span {
     color: #E95A08;
 }
-
 .hero-description {
     font-size: 1.4rem;
-    font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
 }
-/* plant section */
-.plant{
-    width: 80%;
-    margin: 0px auto;
-    margin-top: 100px;
+
+.hero-img {
+    flex: 1 1 400px;
 }
-.plant-title{
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Plant Section */
+.plant {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+}
+.plant-title {
     font-size: 3.2rem;
     font-weight: 700;
-    text-align: center;
 }
-.plant-title span{
+.plant-title span {
     color: #E95A08;
 }
-.plant-describtion{
+.plant-describtion {
     font-size: 1.3rem;
-    font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
 }
-.plant-card{
+
+.plant-card {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    row-gap: 30px;
-    column-gap: 10px;
-
+    gap: 20px;
 }
-.card-heading{
-    text-align: center;
-    font-size: 1.4rem;
+
+/* Card Design */
+.card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-heading {
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.product-price{
-    text-align: center;
-    font-size: 1.4rem;
+.product-price {
+    font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
-.btn{
+.btn {
     width: 100%;
-    height: auto;
     background-color: #E95A08;
     color: white;
     border: none;
     padding: 10px;
-    
-
+    font-weight: 600;
+    cursor: pointer;
 }
 
-/* For mobile device */
-@media screen and (max-width:576px) {
+/* Responsive for Mobile Devices */
+@media screen and (max-width: 576px) {
+    .nav-list {
+  }
 
-    .navbar {
-        width: 100%;
-        align-items: center;
-    }
+  .nav-item:not(:last-child) {
+    display: none;
+  }
 
-    .nav-item:not(:last-child) {
-        display: none;
-    }
+  .navbar {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .logo {
-        height: 30px;
-    }
+  .navbar img {
+    height: 40px; 
+  }
 
-    /* hero section */
-    .hero {
-        width: 100%;
-        margin: 0px auto;
-        flex-direction: column-reverse;
-        margin-top: 50px;
-    }
+  /* hero section */
+  .hero{
+    flex-direction: column-reverse;
+  }
 
-    /* plant section */
-    .plant{
-      width: 100%;
-   
+  /* plant section */
+.plant-card {
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
 }
-
-
-.plant-card{
-    grid-template-columns: repeat(2,1fr);
-    row-gap: 10px;
-    column-gap: 5px;
-
-}
-
-
-
-
-
-
-
 }
