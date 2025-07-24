@@ -192,7 +192,7 @@ body {
   width: 50%;
   position: absolute;
   top: -50px;
-  left: -250px;
+  left: -220px;
 }
 
 .right-content h2 {
@@ -213,6 +213,88 @@ body {
   color: rgba(0, 0, 0, 0.7);
   margin-bottom: 15px;
   line-height: 1.6;
+}
+
+/* letes deal */
+.letest-deal{
+  width: 90%;
+ /* border:2px solid tomato; */
+  max-width: 1200;
+  margin: 0 auto;
+}
+.deal-title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+
+}
+.deal-title span{
+  color: #E95A08;
+}
+.deal-describtion{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+.promo-grid {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2, 150px); 
+  margin-top: 20px;
+  gap: 12px;
+  /* border: 2px solid tomato; */
+}
+
+.promo-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.promo-item.small {
+  height: 150px;
+  
+}
+
+.promo-item.large {
+  grid-row: span 2;
+  grid-column: span 2;
+  height: 100%;
+}
+
+.promo-text {
+  
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.promo-text h3, .promo-text h2 {
+  margin: 0;
+}
+
+.promo-text a {
+  margin: 4px 0 0;
+  color: white;
+}
+
+#img1{
+  background-image: url("/assets/deal-bloom.png");
+}
+#img2{
+  background-image: url("/assets/deal-ana.png");
+}
+#img3{
+  background-image: url("/assets/deal-zabo.png");
 }
 
 /* Responsive for Mobile Devices */
@@ -260,7 +342,7 @@ body {
   }
 
   .left-image img {
-    width: 80%;
+    width: 100%;
     height: auto;
     display: block;
   }
@@ -294,6 +376,44 @@ body {
   html, body {
     overflow-x: hidden;
   }
+
+  /* desl section for mobile screen */
+.letest-deal{
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.promo-grid {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(1, 150px); 
+  margin-top: 20px;
+  gap: 12px;
+  /* border: 2px solid tomato; */
+}
+
+
+.promo-item.small {
+  height: 150px;
+  
+}
+
+.promo-item.large {
+  grid-row: span 1;
+  grid-column: span 1;
+  height: 150px;
+}
+
+
+
+
+
+
+
+
 
 }
 
